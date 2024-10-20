@@ -10,10 +10,70 @@ https://templatemo.com/tm-531-reflux
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 body {
     font-family: 'Lato', sans-serif;
+    background-color: #1e1e1e;
 }
 
+
+
+
+
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7%;
+}
+
+.timeline-item {
+    display: flex;
+    flex-wrap: wrap; /* Permet d'ajuster sur petits écrans */
+    margin-bottom: 50px; /* Espace entre les événements */
+    padding-bottom: 10px;
+}
+
+.date {
+    width: 100%; /* Par défaut, la date occupe toute la largeur */
+    max-width: 150px; /* Limite la largeur max pour les grandes fenêtres */
+    font-weight: bold;
+    margin-bottom: 10px; /* Espace entre la date et le contenu */
+    color: darkgreen;
+}
+
+.content {
+    flex-grow: 1;
+    padding-left: 20px; /* Espace entre la date et le contenu */
+}
+
+.content h3 {
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+}
+
+.content p {
+    color: darkgreen;
+    line-height: 1.5;
+}
+
+/* Responsive Design pour les petits écrans */
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column; /* Les dates et le contenu passent en colonne sur petits écrans */
+    }
+
+    .content {
+        padding-left: 0; /* Retire l'espace à gauche pour les petits écrans */
+        margin-top: 10px; /* Ajoute de l'espace entre la date et le contenu */
+    }
+}
+
+
+
+
+
+
 #page-wraper {
-    background: url(../images/page-bg.jpg) no-repeat center center fixed;
+    /* background: url(../images/page-bg.jpg) no-repeat center center fixed; */
+    background-color: #1e1e1e;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -295,6 +355,7 @@ html {
 }
 
 .section-heading {
+    align-content: center;
     text-align: center;
     padding: 80px 45px;
 }
@@ -308,7 +369,7 @@ html {
 .section-heading .line-dec {
     width: 60px;
     height: 3px;
-    background-color: #a43f49;
+    background-color:darkgoldenrod;
     margin: 10px auto;
 }
 
@@ -371,7 +432,7 @@ button:hover {
 
 .left-image img,
 .right-image img {
-    border-radius: 5px;
+    border-radius: 155px;
 }
 
 .right-image-post h4,
