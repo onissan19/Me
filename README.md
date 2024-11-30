@@ -22,9 +22,9 @@ Notre projet consiste donc à développer une application mobile pour analyser r
 ## Get started
 pré-requis :
 
-   -visual studio code
+   - visual studio code
    
-   -Node JS
+   - Node JS
 
 1. Install
 
