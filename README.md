@@ -20,11 +20,13 @@ Notre projet consiste donc à développer une application mobile pour analyser r
 
 
 ## Get started
-pré-requis : 
+pré-requis :
+
    -visual studio code
+   
    -Node JS
 
-1. Install dependenciesj
+1. Install
 
    ```bash
    npm install
