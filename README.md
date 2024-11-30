@@ -27,12 +27,57 @@ pré-requis :
    - [Node JS](https://nodejs.org/en/download/prebuilt-installer)
 
 1. Install
+   - cloner le depot git et l'ouvrir avec vsCode
+   - Verifier que NodeJs est bien installer en faisant :
+     
+   ```bash
+   node --version
+   ```
+   
+   ```bash
+   npm --version
+   ```
+   
+   ```bash
+   npx --version
+   ```
+   Si vous rencontrez des erreurs, essayez avec la commande prompt au lieu de powerShell et si cela persiste, réessayez de reinstaller [Node JS](https://nodejs.org/en/download/prebuilt-installer)
 
+   - Installation des dépendances
+     
+     Dans le terminal a la racine du projet faite :
+     
    ```bash
    npm install
    ```
+   
+   - Installation de l'API
+     
+     A la racine du projet ouvrez le ficher apiConfig.js
+     
+     ![image](https://github.com/user-attachments/assets/8f87bcd7-3820-4d8c-b1a0-000ba7e2f80f)
 
-2. Start the app
+     Puis ajoutez y votre cle et votre endpoint
+     
+     ![image](https://github.com/user-attachments/assets/5d062605-39b6-4dd3-b430-9760782c348e)
+
+     Nous avons deja complete l'URL plus loin dans le code
+
+   - Installation d'Expo Go sur votre smartPhone [IOS](https://apps.apple.com/fr/app/expo-go/id982107779) ou [Android](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=fr&pli=1)
+
+     ![image](https://github.com/user-attachments/assets/8a5d1970-2a69-4a51-8c24-7f0d01237b91)
+
+     	vous n'avez pas besoin de vous authentifier vous pouvez skip cette etape
+
+     
+
+   
+3. 
+   
+   -
+   
+
+4. Start the app
 
    ```bash
     npx expo start
