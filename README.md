@@ -1,4 +1,6 @@
-# Contexte de notre projet 
+# bienvenue 👋 dans notre application de détection d'objets dans une image par l'IA 🤖
+
+## Contexte de notre projet 
 
 Groupe 5 - Participants du projet :
 
@@ -68,54 +70,86 @@ pré-requis :
      ![image](https://github.com/user-attachments/assets/8a5d1970-2a69-4a51-8c24-7f0d01237b91)
 
      	vous n'avez pas besoin de vous authentifier vous pouvez skip cette etape
-
      
 
-   
-3. 
-   
-   -
-   
+2. Start the app
+   Maintenant nous somme pres a run notre application
 
-4. Start the app
+   Assurez vous que votre smartPhone et votre ordinateur sois sur le meme resaux.
+
+   Dans le terminal a la racine du projet faite :  
 
    ```bash
-    npx expo start
+    npm start
    ```
+   Apres l'execusion de la commande si dessus votre ceci 👇 devrait s'afficher dans votre terminal
+   
+   ![image](https://github.com/user-attachments/assets/2d12eef1-b4be-457e-9bfa-88330df18a94)
 
-In the output, you'll find options to open the app in a
+   - Sur IOS
+     
+     Vous avez juste a scanner le QRCode avec votre camera ensuite cliquer sur le lien qui devrait souvrire normalement dans votre application Expo GO
+     
+     Puis attendez quelques seconde le temps que l'application se build.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+   - Sur Android
+     
+     Ouvrez l'application Expo go, vous devriez voir apparetre a l'acceuil un boutton scan QR code
+     
+     ![image](https://github.com/user-attachments/assets/617d54d2-488b-46f9-bd1f-400cd16ae812)
 
-## Get a fresh project
 
-When you're ready, run:
+      scanner le QRCode Puis attendez quelques seconde le temps que l'application se build.
 
-```bash
-npm run reset-project
-```
+     Que se soit sur IOS ou sur Android
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+     vous devrez d'abord avoir :
+
+      comme interface 👇
+
+        ![image](https://github.com/user-attachments/assets/8785eaca-8eb7-4871-9b85-bd7a5065f9c4)
+
+  	 puis ceci 👇
+
+        ![image](https://github.com/user-attachments/assets/fe12bcc6-5ffe-4cf7-8f63-dab58f97a013)
+     
+     	Si jamais vous avez cette intercace si dessous malgre que vos deux appareil soit sur le meme resaux  sacher que c'est une errreur resaux
+     	et que votre telephone n'arrive pas a acceder a l'application.
+
+        ![image](https://github.com/user-attachments/assets/8bc77704-091d-44df-9c07-93e20c791956)
+
+	pour y remedier vous pouvez allumer le point d'acces de votre ordinateur et vous y connecter avec votre telephone re Scanner le Qr code.
+
+
+  3. Utilisation de l'application
+     
+     Nous vous suggerons d'etre en mode sombre☺️
+
+     Vous aurez une interface comme ceci 👇(IOS)
+     
+     ![image](https://github.com/user-attachments/assets/a1caa3ae-f880-4a2b-96b6-cf59f0ad2a62)
+
+ - choisiser entre prendre une photo ou charger une photo
+ - Autoriser l'acces a l'appareil photo ou a la gallerie
+ - prennez une photo, recadrer la puis appuyer sur analyser
+ - Vous verrez une page de chargement puis les resultats de l'analyse
+     
 
 ## Limitation Identifiée et Perspectives d’Amélioration
+
 Cependant, nous avons rencontré une petite contrainte liée au traitement des images. Pour que l’analyse fonctionne correctement, il est nécessaire de :
-	1.	Prendre la photo à environ 30 centimètres de l’objet à analyser.
-	2.	Zoomer sur l’image avant de lancer l’analyse.
+
+1. Prendre la photo à environ 30 centimètres de l’objet à analyser.
+ 
+2. Zoomer sur l’image avant de lancer l’analyse.
 
 Si l’analyse échoue, il suffit d’ajuster le zoom sur l’image et de réessayer. Cette étape est importante car l’algorithme a besoin d’une image de taille et de qualité optimales pour fonctionner correctement.
 
 À l’avenir, cette limitation pourrait être levée en :
-	•	Ajoutant un module capable de redimensionner automatiquement les images avant l’analyse.
-	•	Optimisant l’algorithme pour qu’il s’adapte à différents formats et résolutions sans intervention manuelle.
 
-## Join the community
+- Ajoutant un module capable de redimensionner automatiquement les images avant l’analyse.
+ 
+- Optimisant l’algorithme pour qu’il s’adapte à différents formats et résolutions sans intervention manuelle.
+ 
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
